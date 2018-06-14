@@ -11,7 +11,7 @@ https://travis-ci.org/alpine-docker/terraform-landscape
 
 ### Docker iamge tags:
 
-https://hub.docker.com/r/alpine/terraform-landscape/tags/
+https://hub.docker.com/r/alpine/landscape/tags/
 
 # Usage:
 
