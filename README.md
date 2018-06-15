@@ -16,12 +16,12 @@ https://hub.docker.com/r/alpine/landscape/tags/
 # Usage:
 
     # must mount the local folder to /apps in container.
-    docker run -ti --rm -v $(pwd):/apps alpine/landscape:0.18.0
+    docker run -ti --rm -v $(pwd):/apps alpine/landscape:0.1.18
 
     # run terraform-landscape container as command
-    alias landscape="docker run -ti --rm -v $(pwd):/apps alpine/landscape:0.18.0"
+    alias landscape="docker run -i --rm -v $(pwd):/apps alpine/landscape:0.1.18"
     landscape --help
-    terraform plan | landscape
+    terraform plan | landscape - 
 
 # The Processes to build this image
 
