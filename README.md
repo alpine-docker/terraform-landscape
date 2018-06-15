@@ -21,8 +21,10 @@ https://hub.docker.com/r/alpine/landscape/tags/
     # run terraform-landscape container as command
     alias landscape="docker run -i --rm -v $(pwd):/apps alpine/landscape:0.1.18"
     landscape --help
-    terraform plan
-    terraform plan | landscape - 
+    terraform plan |tee report
+    landscape - < report
+    # or
+    terraform plan | landscape -
 
 # The Processes to build this image
 
